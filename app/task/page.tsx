@@ -14,7 +14,9 @@ export default function TaskPage() {
 
     const handelSubmit = (e: any) => {
         console.log('fffffff');
-
+        console.log('emty the state');
+        setTask('');
+        
 
 
         TotalTask.push(task);
