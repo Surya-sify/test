@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function TaskPage() {
 
-    var TotalTask :any [];
+    var TotalTask: any[];
     const [task, setTask] = useState('')
 
     const handelChange = (e: any) => {
@@ -12,9 +12,14 @@ export default function TaskPage() {
         console.log(task);
     }
 
-    const handelSubmit = (e:any) => {
+    const handelSubmit = (e: any) => {
         console.log('fffffff');
-        
+
+
+
+        TotalTask.push(task);
+        console.log(TotalTask);
+
     }
 
 
