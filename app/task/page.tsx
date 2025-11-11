@@ -14,8 +14,11 @@ export default function TaskPage() {
 
     const handelSubmit = (e: any) => {
         console.log('fffffff');
+        e.preventDefault();
 
-
+        if (!TotalTask) {
+            TotalTask = [];
+        }
 
         TotalTask.push(task);
         console.log(TotalTask);
