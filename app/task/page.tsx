@@ -19,6 +19,10 @@ export default function TaskPage() {
         if (!TotalTask) {
             TotalTask = [];
         }
+        console.log('emty the state');
+        setTask('');
+        
+
 
         TotalTask.push(task);
         console.log(TotalTask);
